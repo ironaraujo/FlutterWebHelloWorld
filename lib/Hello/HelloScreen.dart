@@ -29,6 +29,10 @@ class _HelloScreenState extends State<HelloScreen> {
               builder: (BuildContext context, HelloBloc bloc) {
                 return Text("${bloc.value}");
               },
+            ),
+            RaisedButton(
+              child: Text("Second Screen!"),
+              onPressed: ()=>Navigator.pushNamed(context, "/screen2"),
             )
           ],
         ),
